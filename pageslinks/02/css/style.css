@@ -1,107 +1,100 @@
-@charset "UTF-8";
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mooli', sans-serif;
     font-family: 'Poppins', sans-serif;
+    font-style: none;
+    color: white;
 }
 
-html {
+main {
+    background-color: black;
     height: 100vh;
 }
 
-body {
-    background-color: rgb(26, 26, 26);
-    height: 100%;
-}
-
 .container {
+    background-color: rgb(0, 0, 0);
     height: 100%;
-    max-width: 550px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    color: #fff;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.deg {
-    background: linear-gradient(to right, #FE4701, #FF0054);
-}
-
-/* HEADER */
-
-header {
     text-align: center;
-    margin-bottom: 40px;
-}
-
-header .imgtopo {
-    font-size: 250px;
-}
-
-header h1 {
-    font-size: 30px;
-    color: rgb(78, 78, 78);
-}
-
-header p {
-    font-weight: 300;
-}
-
-/* MAIN */
-
-section.botoes-links {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-section.botoes-links a button{
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
+    margin: 0 auto;
     align-items: center;
-    justify-content: space-between;
-    border: none;
+    max-width: 740px;
+}
+
+/* pqntx */
+
+.container .txtpqn {
+    color: rgb(100, 100, 100);
+    margin-top: 20px;
+    user-select: none;
+} 
+
+
+/* BTN1 */
+
+.container .btn1  {
+    margin-top: 200px;
+}
+
+.container .btn1 h1 {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 50px 100px;
+}
+
+.container .btn1 span {
+    color: #62c4ae;
+    
+} 
+
+.container .btn1:hover {
+    border: 1px solid rgb(109, 109, 109);
+    box-shadow: 0px 0px 10px 5px rgb(27, 27, 27);
     border-radius: 20px;
-    font-size: 16px;
     cursor: pointer;
-    color: #fff;
+    transition: .5s;
+    transform: scale(1.2);
 }
 
-section.botoes-links a button:hover, footer a:hover {
-    transform: scale(1.05);
-    transition: .2s;
+/* BTN2 */
+
+.container .btn2 {
+    margin-top: 150px;
 }
 
-section.botoes-links i {
-    font-size: 26px;
+.container .btn2 a {
+    
+}   
+
+.container .btn2 a button {
+    border: none;
+    background-color: black;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 50px 100px;
+}
+
+.container .btn2 a button span {
+    color: #62c4ae;
+}
+
+.container .btn2 a button:hover {
+    border: 1px solid rgb(109, 109, 109);
+    box-shadow: 0px 0px 10px 5px rgb(27, 27, 27);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    transform:  scale(1.2);
 }
 
 /* FOOTER */
 
-footer {
-    margin: 40px;
+footer p {
+    background-color: rgb(12, 12, 12);
     text-align: center;
 }
 
-footer a {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    line-height: 60px;
-    margin: 0px 10px;
-    font-size: 20px;
+footer p span {
+    color: #62c4ae;
 }
-
